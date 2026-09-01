@@ -1,0 +1,30 @@
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem 2rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.no-results {
+  text-align: center;
+  padding: 4rem 2rem;
+  font-size: 1.1rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+}
